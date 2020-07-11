@@ -22,5 +22,19 @@ public final class RestConstant {
 	public static final String LOGIN_FAIL="Login Failed!";
 	public static final String CREDENTIAL_NOT_VALID="Credentials Not Valid!";
 	public static final String USERNAME_NOT_VALID = "Username Is Not Valid!";
+	public static final String WISH24_NAVIGATION_BAR="/wish24NavigationBar";
+	public static final String SAVE_NAVIGATION_BAR="/saveNavigationBar";
+	public static final String DEPTH_ZERO_NAVIGATION_LIST="/getDepthZero/Navigation/List";
+	public static final String NAVIGATION_NEXT_LAYER="/get/NavigationNextLayer";
+	public static final String UPDATE_NAVIGATION="/updateNavigation";
+	public static final String UPDATE_SUCCESS="Update Navigation Success!";
+	public static final String ADD_UNDER_NAVIATION="/addUnderNavigation";
+	public static final String CHANGE_PARENT="/changeParent";
+	public static final String INACTIVE_NAVIGATION="/getAllInactiveNavigation";
+	public static final String ACTIVE_INACTIVE_NAVIGATION="activeOrInActiveNavigation";
+	public static final String NAVIGATION_SAVED="Navigation Bar Status Saved Successfully!";
+	public static final String RNF="Record Not Found!";
+	public static final String SF="Successfully Fetched!";
+	public static final String FAIL="FAIL!";
 	
 }

@@ -10,6 +10,7 @@ import com.wish.Controller.UserController;
 import com.wish.Dtos.Request.UserRegistrationDto;
 import com.wish.Exception.CustomException;
 import com.wish.Model.User;
+import com.wish.Utils.UUIDGeneration;
 import com.wish.Validation.Email;
 import com.wish.Validation.MobileNumber;
 import com.wish.Validation.Username;
@@ -51,7 +52,8 @@ public class UserRegistrationDtoMapper {
 					+ new Throwable().getStackTrace()[RestConstant.INT_ZERO].getLineNumber());
 			throw CustomException.throwException(RestConstant.PASSWORD_NOT_EQUAL);
 		}
-		user.setUserId(UUID.randomUUID().toString());
+		
+		user.setUserId(UUIDGeneration.UUIDGeneration());
 		user.setUserName(userRegistrationDto.getUserName());
 		BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 		String hashedPassword = passwordEncoder.encode(userRegistrationDto.getPassword());
